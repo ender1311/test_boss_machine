@@ -1,0 +1,14 @@
+name: Start App
+
+on:
+  push:
+    branches:
+      - gh-pages
+
+jobs:
+  start-app:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Start App
+      run: node server.js
