@@ -12,6 +12,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Start App
-      run: node server.js
+      run: npm run start
       env:
         NODE_ENV: production
